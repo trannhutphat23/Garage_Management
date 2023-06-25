@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0xp;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    .search{
+        border: none;
+        &:hover{
+            background-color: green;
+        }
+    }
+}
+.title {
+    text-align: center;
+    color: white;
+    background-color: #467C8EFA;
+    font-weight: 700;
+}
+.container{
+    position: relative;
+    thead{
+        background-color: #6B728E;
+        color: white;
+      }
+}
+
+h1{
+    text-align: center;
+}
+
+.staff-root{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    background-color:rgba(193, 210, 245, 0.62) ;
+    justify-content: center;
+    align-items: center;
+    .cancel{
+        position: absolute;
+        font-size: 40px;
+        display: flex;
+        justify-content: end;
+        left: 10px;
+        transition: .1s;
+        &:hover{
+            color: red;
+        }
+    }
+    .staff{
+        background-color: #dddcdc;
+	    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+        width: 60%;
+        height: 40%;
+        i{
+            position: relative;
+            right: 15px;
+        }
+        button{
+            i{
+                right: 0px;
+            }
+        }
+        .form-control{
+            border: none;
+            width: 70%;
+            margin-top: 30px;
+        }
+    }
+}
+.form-root {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(193, 210, 245, 0.62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .form {
+      width: 65%;
+      height: 90%;
+      background-color: #dddcdc;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+      .cancel {
+        position: relative;
+        font-size: 40px;
+        display: flex;
+        justify-content: end;
+        transition: 0.1s;
+        margin: 0px;
+        padding: 0px;
+        &:hover {
+          color: red;
+        }
+      }
+      .chart{
+        background-color: white;
+        width: 92%;
+        height: 80%;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        .ccol{
+            background-color: black;
+            position: relative;
+            padding: 0;
+            height: 80%;
+            width: 10%;
+            transition: .3s;
+            .month {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+              }
+            .value {
+                position: relative;
+                bottom: 20px;;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 500;
+                color: black;
+                display: none;
+                transition: .3s;
+            }
+              &:hover{
+                width: 25%;
+                background-color: green;
+                .value{
+                    display: block;
+                }
+            }
+              
+        }
+        
+      }
+    }
+}
+  
+
+.total{
+    font-size: 20px;
+    p{
+        b{
+            margin-left: 10px;
+            color: red;
+            font-size: 30px;
+        }
+    }
+}
+
+.container{
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,189 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.menu {
+  height: 100vh;
+  background-color: rgba(70, 124, 142, 0.9803921569);
+  border-right: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu .infouser {
+  height: 7%;
+  width: 100%;
+  border-top: 2px solid white;
+}
+.menu .infouser .logout {
+  width: 20%;
+  transition: 0.2s;
+}
+.menu .infouser .logout:hover {
+  transform: scale(1.1);
+  color: red;
+}
+.menu .infouser i {
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+.menu .infouser .user {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.menu .infouser .user p {
+  margin: 0px;
+  font-size: 17px;
+  color: white;
+  margin-left: 10px;
+}
+.menu .infouser .setting {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.menu .infouser .setting i {
+  transition: 0.35s;
+}
+.menu .infouser .setting p {
+  margin: 0px;
+  font-size: 17px;
+  color: white;
+  margin-left: 10px;
+}
+.menu .infouser .setting:hover i {
+  transform: rotate(180deg);
+}
+.menu .infouser:hover {
+  background-color: rgba(55, 90, 102, 0.9803921569);
+}
+.menu .ele {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  background-color: rgba(62, 109, 125, 0.9803921569);
+  border: none;
+  padding: 1px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.menu .ele:hover {
+  background-color: rgba(55, 90, 102, 0.9803921569);
+}
+.menu .more2, .menu .more3, .menu .more5 {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.menu .more2 div, .menu .more3 div, .menu .more5 div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+.menu .more2 div p, .menu .more3 div p, .menu .more5 div p {
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+.menu .more2 div i, .menu .more3 div i, .menu .more5 div i {
+  margin-left: 15%;
+}
+.menu .more2 div:hover, .menu .more3 div:hover, .menu .more5 div:hover {
+  background-color: rgba(55, 90, 102, 0.9803921569);
+}
+.menu .more2 .Chose, .menu .more3 .Chose, .menu .more5 .Chose {
+  background-color: rgba(55, 90, 102, 0.9803921569);
+}
+.menu button {
+  width: 100%;
+  height: 100%;
+}
+.menu button i {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 15px;
+  color: white;
+}
+.menu button p {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  width: 85%;
+  text-align: left;
+  margin: 0;
+}
+.menu .onChose {
+  border-left: 3px solid white;
+  background-color: rgba(55, 90, 102, 0.9803921569);
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.page .p-ele {
+  width: 100%;
+  height: 100vh;
+}
+.page iframe, .page a {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+}
+.page .settingSCR {
+  position: absolute;
+  padding: 15px;
+  padding-bottom: 0px;
+  z-index: 10000;
+  bottom: 0px;
+  background-color: rgba(62, 109, 125, 0.9803921569);
+  width: 350px;
+}
+.page .settingSCR p {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.page .settingSCR b {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.page .settingSCR input {
+  width: 20%;
+  margin-left: 15px;
+}
+.page .settingSCR input:last-of-type {
+  margin-left: auto;
+}
+.page .settingSCR button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=index.css.map */

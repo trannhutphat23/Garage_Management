@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  background-color: rgba(70, 124, 142, 0.9803921569);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+}
+.container .search {
+  border: none;
+}
+.container .search:hover {
+  background-color: green;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body thead {
+  background-color: #6B728E;
+  color: white;
+}
+
+.add-supplies-root, .history-supplies-root, .info-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-supplies-root .cancel, .history-supplies-root .cancel, .info-root .cancel {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  left: 10px;
+  transition: 0.1s;
+}
+.add-supplies-root .cancel:hover, .history-supplies-root .cancel:hover, .info-root .cancel:hover {
+  color: red;
+}
+.add-supplies-root .add-supplies, .add-supplies-root .history-supplies, .add-supplies-root .info, .history-supplies-root .add-supplies, .history-supplies-root .history-supplies, .history-supplies-root .info, .info-root .add-supplies, .info-root .history-supplies, .info-root .info {
+  background-color: lightgrey;
+  width: 60%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.add-supplies-root .add-supplies th,
+.add-supplies-root .add-supplies td, .add-supplies-root .history-supplies th,
+.add-supplies-root .history-supplies td, .add-supplies-root .info th,
+.add-supplies-root .info td, .history-supplies-root .add-supplies th,
+.history-supplies-root .add-supplies td, .history-supplies-root .history-supplies th,
+.history-supplies-root .history-supplies td, .history-supplies-root .info th,
+.history-supplies-root .info td, .info-root .add-supplies th,
+.info-root .add-supplies td, .info-root .history-supplies th,
+.info-root .history-supplies td, .info-root .info th,
+.info-root .info td {
+  border: 1px solid black;
+}
+.add-supplies-root .add-supplies tbody, .add-supplies-root .history-supplies tbody, .add-supplies-root .info tbody, .history-supplies-root .add-supplies tbody, .history-supplies-root .history-supplies tbody, .history-supplies-root .info tbody, .info-root .add-supplies tbody, .info-root .history-supplies tbody, .info-root .info tbody {
+  background-color: white;
+}
+.add-supplies-root .add-supplies i, .add-supplies-root .history-supplies i, .add-supplies-root .info i, .history-supplies-root .add-supplies i, .history-supplies-root .history-supplies i, .history-supplies-root .info i, .info-root .add-supplies i, .info-root .history-supplies i, .info-root .info i {
+  position: relative;
+  right: 15px;
+}
+.add-supplies-root .add-supplies button i, .add-supplies-root .history-supplies button i, .add-supplies-root .info button i, .history-supplies-root .add-supplies button i, .history-supplies-root .history-supplies button i, .history-supplies-root .info button i, .info-root .add-supplies button i, .info-root .history-supplies button i, .info-root .info button i {
+  right: 0px;
+}
+.add-supplies-root .add-supplies .form-control, .add-supplies-root .history-supplies .form-control, .add-supplies-root .info .form-control, .history-supplies-root .add-supplies .form-control, .history-supplies-root .history-supplies .form-control, .history-supplies-root .info .form-control, .info-root .add-supplies .form-control, .info-root .history-supplies .form-control, .info-root .info .form-control {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=page3.css.map */

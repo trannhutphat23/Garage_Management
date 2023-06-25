@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0xp;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .search {
+  border: none;
+}
+body .search:hover {
+  background-color: green;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  background-color: rgba(70, 124, 142, 0.9803921569);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+}
+.container thead {
+  background-color: #6B728E;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.staff-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.staff-root .cancel {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  left: 10px;
+  transition: 0.1s;
+}
+.staff-root .cancel:hover {
+  color: red;
+}
+.staff-root .staff {
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+.staff-root .staff i {
+  position: relative;
+  right: 15px;
+}
+.staff-root .staff button i {
+  right: 0px;
+}
+.staff-root .staff .form-control {
+  border: none;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.container {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=page5.css.map */

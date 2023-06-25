@@ -1,0 +1,192 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.menu {
+  height: 100vh;
+  background-color: #467c8efa;
+  border-right: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  .infouser {
+    height: 7%;
+    width: 100%;
+    border-top: 2px solid white;
+    .logout {
+      width: 20%;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        color: red;
+      }
+    }
+    i {
+      font-size: 18px;
+      cursor: pointer;
+      color: white;
+      margin-left: 10px;
+    }
+    .user{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      p {
+        margin: 0px;
+        font-size: 17px;
+        color: white;
+        margin-left: 10px;
+      }
+    }
+    .setting{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        i{
+            transition: .35s;
+        }
+        p {
+          margin: 0px;
+          font-size: 17px;
+          color: white;
+          margin-left: 10px;
+        }
+        &:hover{
+            i{
+                transform: rotate(180deg);
+            }
+        }
+    }
+      &:hover{
+        background-color: #375a66fa;
+      }
+  }
+  .ele {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: #3e6d7dfa;
+    border: none;
+    padding: 1px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: #375a66fa;
+    }
+  }
+  .more2, .more3, .more5 {
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    cursor: pointer;
+    div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      p {
+        margin-bottom: 0px;
+        margin-left: 10px;
+      }
+      i {
+        margin-left: 15%;
+      }
+      &:hover {
+        background-color: #375a66fa;
+      }
+    }
+    .Chose {
+      background-color: #375a66fa;
+    }
+  }
+  button {
+    width: 100%;
+    height: 100%;
+    i {
+      height: 100%;
+      width: 15%;
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      font-size: 15px;
+      color: white;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
+      width: 85%;
+      text-align: left;
+      margin: 0;
+    }
+  }
+  .onChose {
+    border-left: 3px solid white;
+    background-color: #375a66fa;
+  }
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    .p-ele {
+        width: 100%;
+        height: 100vh;
+    }
+    iframe,a{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: 0px;
+    }
+    .settingSCR{
+        position: absolute;
+        padding: 15px;
+        padding-bottom: 0px;
+        z-index: 10000;
+        bottom: 0px;
+        background-color: #3e6d7dfa;
+        width: 350px;
+        p{
+            color: white;
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+        }
+        b{
+            margin-left: 5px;
+            font-size: 18px;
+        }
+        input{
+            width: 20%;
+            margin-left: 15px;
+            &:last-of-type{
+                margin-left: auto;
+            }
+        }
+        button{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width:35%;
+        }
+    }
+}
+
+
+
+.hidden {
+  display: none;
+}

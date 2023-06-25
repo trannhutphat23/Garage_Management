@@ -1,0 +1,356 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body thead {
+  background-color: #6B728E;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.addS {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.turnBack {
+  position: relative;
+  right: 320px;
+  bottom: 5px;
+  font-weight: 700;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+.turnBack i {
+  transition: 0.2s;
+}
+.turnBack i:hover {
+  transform: scale(1.1);
+  transform: translateX(-5px);
+}
+
+.title {
+  text-align: center;
+  color: white;
+  background-color: rgba(70, 124, 142, 0.9803921569);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+}
+.container .search {
+  border: none;
+}
+.container .search:hover {
+  background-color: green;
+}
+.container .container-heading {
+  display: flex;
+  flex-direction: column;
+}
+.container .container-heading .searchMore {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-heading .searchMore .searchEle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .container-heading .searchMore .searchEle select, .container .container-heading .searchMore .searchEle input {
+  width: 100%;
+  height: 30px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.container .container-heading .searchMore button {
+  width: 15%;
+}
+.container .container-heading .hidden {
+  display: none;
+}
+.container .total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .total p {
+  font-size: 30px;
+  position: relative;
+}
+.container .total p b {
+  color: red;
+}
+.container .total button {
+  width: 150px;
+  height: 50px;
+}
+
+.add-form-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-form-root .cancel {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  left: 10px;
+  transition: 0.1s;
+}
+.add-form-root .cancel:hover {
+  color: red;
+}
+.add-form-root .add-form {
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+.add-form-root .add-form i {
+  position: relative;
+  right: 15px;
+}
+.add-form-root .add-form button i {
+  right: 0px;
+}
+.add-form-root .add-form .form-control {
+  border: none;
+}
+
+.detail-root, .detail1-root {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.detail-root .cancel, .detail1-root .cancel {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  transition: 0.1s;
+  margin: 0px;
+  padding: 0px;
+}
+.detail-root .cancel:hover, .detail1-root .cancel:hover {
+  color: red;
+}
+.detail-root .detail, .detail-root .detail1, .detail1-root .detail, .detail1-root .detail1 {
+  width: 70%;
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.detail-root .detail table th,
+.detail-root .detail table td, .detail-root .detail1 table th,
+.detail-root .detail1 table td, .detail1-root .detail table th,
+.detail1-root .detail table td, .detail1-root .detail1 table th,
+.detail1-root .detail1 table td {
+  border: 1px solid black;
+}
+.detail-root .detail table tbody, .detail-root .detail1 table tbody, .detail1-root .detail table tbody, .detail1-root .detail1 table tbody {
+  background-color: white;
+}
+.detail-root .supplies, .detail-root .cost, .detail1-root .supplies, .detail1-root .cost {
+  position: relative;
+  top: 10px;
+}
+.detail-root .supplies h3, .detail-root .cost h3, .detail1-root .supplies h3, .detail1-root .cost h3 {
+  text-align: center;
+}
+.detail-root .supplies table, .detail-root .cost table, .detail1-root .supplies table, .detail1-root .cost table {
+  position: relative;
+  top: 10px;
+}
+.detail-root .total td p, .detail1-root .total td p {
+  font-size: 15px;
+  color: black;
+  left: 0px;
+}
+.detail-root .total td p b, .detail1-root .total td p b {
+  color: black;
+}
+.detail-root .total p, .detail1-root .total p {
+  font-size: 30px;
+  position: relative;
+  left: 35%;
+  top: 20px;
+}
+.detail-root .total p b, .detail1-root .total p b {
+  color: red;
+}
+.detail-root .total button, .detail1-root .total button {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.history-supplies-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history-supplies-root .cancel {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  left: 10px;
+  transition: 0.1s;
+}
+.history-supplies-root .cancel:hover {
+  color: red;
+}
+.history-supplies-root .history-supplies {
+  background-color: lightgrey;
+  width: 75%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.history-supplies-root .history-supplies th, .history-supplies-root .history-supplies td {
+  border: 1px solid black;
+}
+.history-supplies-root .history-supplies tbody {
+  background-color: white;
+}
+.history-supplies-root .history-supplies i {
+  position: relative;
+  right: 15px;
+}
+.history-supplies-root .history-supplies button i {
+  right: 0px;
+}
+.history-supplies-root .history-supplies .form-control {
+  border: none;
+}
+
+.supplies-form-root, .cost-form-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.supplies-form-root .supplies-form, .cost-form-root .supplies-form {
+  width: 80%;
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.supplies-form-root .supplies-form table, .cost-form-root .supplies-form table {
+  background-color: lightpink;
+}
+.supplies-form-root .supplies-form table th,
+.supplies-form-root .supplies-form table td, .cost-form-root .supplies-form table th,
+.cost-form-root .supplies-form table td {
+  border: 1px solid black;
+}
+.supplies-form-root .supplies-form table tbody, .cost-form-root .supplies-form table tbody {
+  background-color: white;
+}
+.supplies-form-root .supplies-form .cancel, .cost-form-root .supplies-form .cancel {
+  position: relative;
+  font-size: 50px;
+  left: 60%;
+  transition: 0.1s;
+  margin: 0px;
+  padding: 0px;
+}
+.supplies-form-root .supplies-form .cancel:hover, .cost-form-root .supplies-form .cancel:hover {
+  color: red;
+}
+.supplies-form-root .supplies-form button, .cost-form-root .supplies-form button {
+  width: 150px;
+  height: 50px;
+}
+
+.pay-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pay-root .pay {
+  width: 65%;
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+}
+.pay-root .pay table {
+  background-color: lightpink;
+}
+.pay-root .pay table th,
+.pay-root .pay table td {
+  border: 1px solid black;
+}
+.pay-root .pay table tbody {
+  background-color: white;
+}
+.pay-root .pay .cancel {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  transition: 0.1s;
+  margin: 0px;
+  padding: 0px;
+}
+.pay-root .pay .cancel:hover {
+  color: red;
+}
+.pay-root .pay .total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pay-root .pay .total p {
+  font-size: 25px;
+  position: relative;
+}
+.pay-root .pay .total p b {
+  color: red;
+}
+.pay-root .pay .total button {
+  width: 150px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=page2.css.map */

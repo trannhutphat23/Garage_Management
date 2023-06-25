@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("backround-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 625px;
+}
+.wrapper{
+    transition:height .2 ease;
+}
+/* Login Form */
+.login-form {
+    width:500px;
+    height:400px;
+    background-color: rgb(172,189,189,0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 80px;
+}
+
+.login-form .log-title {
+    background-color: rgb(255,255,255);
+    border-radius: 35px;
+    padding: 15px 35px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.login-form .log {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.login-form .log #account,.login-form .log #password{
+    width:75%;
+    height:40px;
+    margin:5px 10px;
+    border:none;
+    background:none;
+    outline:none;
+}
+
+.login-form .log i{
+    position:absolute;
+    right:100px;
+    cursor:pointer
+}
+
+.login-form .form-pass{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login-form .btn {
+    background-color: rgb(46,131,136);
+    border-radius: 25px;
+    width: 200px;
+    padding: 15px;
+    color: white;
+    line-height: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form .not-account {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form .not-account .btn-register{
+    text-decoration: none;
+    background-color: rgb(46,131,136);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+}
+/* Register Form */
+.register-form {
+    width:500px;
+    height:500px;
+    background-color: rgb(172,189,189,0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.register-form .reg-title {
+    background-color: rgb(255,255,255);
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.register-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline:none;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.register-form .btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.register-form .btn input{
+    background-color: rgb(46,131,136);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.register-form .btn i{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   font-size: 20px;
+   transform: translate(5px,15px);
+   cursor: pointer;
+}
+.active {
+    display: none;
+}

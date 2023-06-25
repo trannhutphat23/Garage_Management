@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  background-color: rgba(70, 124, 142, 0.9803921569);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+}
+.container thead {
+  background-color: #6B728E;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .search {
+  border: none;
+}
+body .search:hover {
+  background-color: green;
+}
+
+.staff-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.staff-root .cancel {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  left: 10px;
+  transition: 0.1s;
+}
+.staff-root .cancel:hover {
+  color: red;
+}
+.staff-root .staff {
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+.staff-root .staff i {
+  position: relative;
+  right: 15px;
+}
+.staff-root .staff button i {
+  right: 0px;
+}
+.staff-root .staff .form-control {
+  border: none;
+}
+
+.staff-edit-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  background-color: rgba(193, 210, 245, 0.62);
+  justify-content: center;
+  align-items: center;
+}
+.staff-edit-root .cancel {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  left: 10px;
+  transition: 0.1s;
+}
+.staff-edit-root .cancel:hover {
+  color: red;
+}
+.staff-edit-root .staff-edit {
+  background-color: #dddcdc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+.staff-edit-root .staff-edit i {
+  position: relative;
+  right: 15px;
+}
+.staff-edit-root .staff-edit button i {
+  right: 0px;
+}
+.staff-edit-root .staff-edit .form-control {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=page4.css.map */
